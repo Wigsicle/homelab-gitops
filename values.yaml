@@ -1,6 +1,13 @@
 grafana:
   enabled: true
 
+  persistence:
+    enabled: true
+    type: pvc
+    size: 5Gi
+    accessModes:
+      - ReadWriteOnce
+
 prometheus:
   enabled: true
 
