@@ -12,6 +12,10 @@ spec:
       targetRevision: 1.13.0
       helm:
         values: |
+          persistence:
+            defaultClass: true
+            defaultClassReplicaCount: 2
+
           preUpgradeChecker:
             jobEnabled: false
 
